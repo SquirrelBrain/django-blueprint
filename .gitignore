@@ -1,0 +1,110 @@
+# =================================================================== #
+# Files, directories and patterns that Git will intentionally ignore. #
+# Note: Files already tracked by Git are not affected. For complete   #
+# reference, please see:  https://git-scm.com/docs/gitignore          #
+# =================================================================== #
+
+# ============================== #
+#            Database            #
+# ============================== #
+*.db
+*.sql
+db.sqlite3
+db.sqlite3-journal
+
+# ============================== #
+#    Distribution / Packaging    #
+# ============================== #
+*.egg
+*.egg-info/
+.eggs/
+.installed.cfg
+.Python
+build/
+develop-eggs/
+dist/
+downloads/
+eggs/
+lib/
+lib64/
+MANIFEST
+parts/
+pip-wheel-metadata/
+sdist/
+share/python-wheels/
+var/
+wheels/
+
+# ============================== #
+#        Django Framework        #
+# ============================== #
+local_settings.py
+logs/
+media/
+site_media/
+
+# ============================== #
+#         Installer Logs         #
+# ============================== #
+pip-log.txt
+pip-delete-this-directory.txt
+
+# ============================== #
+#           Mac / OS X           #
+# ============================== #
+.DS_Store
+
+# ============================== #
+#      mkdocs Documentation      #
+# ============================== #
+/site
+
+# ============================== #
+#             pyenv              #
+# ============================== #
+.python-version
+
+# ============================== #
+#         Python Bytecode        #
+# ============================== #
+*$py.class
+*.pyc
+*.py[cod]
+__pycache__/
+
+# ============================== #
+#      Sphinx Documentation      #
+# ============================== #
+docs/_build/
+doc/_build/
+
+# ============================== #
+#    Unit Testing / Coverage     #
+# ============================== #
+*.cover
+*.py,cover
+.cache
+.coverage
+.coverage.*
+.hypothesis/
+.nox/
+.pytest_cache/
+.tox/
+coverage.xml
+htmlcov/
+nosetests.xml
+pytestdebug.log
+
+# ============================== #
+#      Virtual Environments      #
+# ============================== #
+.env
+.venv
+env/
+venv/
+
+# ============================== #
+#     Visual Studio Code IDE     #
+# ============================== #
+.vscode/
+*.code-workspace

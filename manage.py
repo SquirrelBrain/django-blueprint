@@ -24,8 +24,8 @@ def execute_subcommand():
             'Virtual Environment? Are you sure that Django is installed '
             'and available on your PYTHONPATH?'
         ) from exc
-    execute_from_command_line
+    execute_from_command_line(sys.argv)
 
 
 if __name__ == '__main__':
-    execute_subscommand()
+    execute_subcommand()

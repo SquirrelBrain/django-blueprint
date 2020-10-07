@@ -6,12 +6,12 @@ hassle of all the mundane setup and configuration.
 
 #### Features
 1. Popular Frameworks
-..* [Bootstrap4](https://getbootstrap.com/)
-..* [FontAwesome](https://fontawesome.com/)
-..* [jQuery 3.5](https://jquery.com/)
+    * [Bootstrap4](https://getbootstrap.com/)
+    * [FontAwesome](https://fontawesome.com/)
+    * [jQuery 3.5](https://jquery.com/)
 2. Optimized Settings Files
-..* Separate files for each environment
-..* Hardened security baseline
+    * Separate files for each environment
+    * Hardened security baseline
 3. Utility Scripts
 
 #### Dependencies

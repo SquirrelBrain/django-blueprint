@@ -1,0 +1,10 @@
+# Core Packages / Modules required for Django Web Framework
+# References:
+#   https://pypi.org/search/?q=django
+#   https://djangopackages.org/categories/apps/
+
+
+# ============================== #
+#              Core              #
+# ============================== #
+Django <= 3.1.2

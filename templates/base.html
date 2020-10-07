@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+{% load static %}
+
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="Copyright" content="" />
+    <meta name="keywords" content="" />
+    <meta name="description" content="" />
+    <title>{% block title %} {% endblock title %}</title>
+
+    {% block css %}
+    {% comment %} External Packages {% endcomment %}
+    <link rel="stylesheet" href="{% static 'packages/bootstrap-4.5.2/bootstrap.min.css' %}">
+    <link rel="stylesheet" href="{% static 'packages/bootstrap-4.5.2/bootstrap-grid.min.css' %}">
+    <link rel="stylesheet" href="{% static 'packages/bootstrap-4.5.2/bootstrap-reboot.min.css' %}">
+    <link rel="stylesheet" href="{% static 'packages/fontawesome-5.15.0/css/fontawesome.min.css' %}">
+
+    {% comment %} Custom CSS {% endcomment %}
+
+    {% endblock css %}
+
+    {% block extra_css %}{% endblock extra_css %}
+</head>
+
+<body>
+    {% block content %}
+    {% comment %} -- Django views rendered here -- {% endcomment %}
+    {% endblock content %}
+
+    {% block js %}
+    {% comment %} External Packages {% endcomment %}
+    <script src="{% static 'packages/jquery-3.5.1/jquery.min.js' %}"></script>
+    <script src="{% static 'packages/bootstrap-4.5.2/bootstrap.bundle.min.js' %}"></script>
+    <script src="{% static 'packages/fontawesome-5.15.0/js/fontawesome.min.js' %}"></script>
+
+    {% comment %} Custom JS {% endcomment %}
+    {% endblock js %}
+
+    {% block extra_js %}{% endblock extra_js %}
+</body>
+
+</html>

@@ -1,0 +1,6 @@
+# Packages / Modules used during Testing / Staging
+# References:
+#   https://pypi.org/search/?q=django
+#   https://djangopackages.org/categories/apps/
+
+-r base.pip

@@ -24,9 +24,9 @@ ALLOWED_HOSTS = [
 DATABASES = {
     'default': {
         'ENGINE': 'django.db.backends.sqlite3',
-        'NAME': Path(PROJECT_ROOT).joinpath('db.sqlite3'),
+        'NAME': str(PROJECT_ROOT / 'db.sqlite3'),
         'TEST': {
-            'NAME': Path(PROJECT_ROOT).joinpath('test.sqlite3'),
+            'NAME': str(PROJECT_ROOT / 'test.sqlite3'),
         },
     }
 }

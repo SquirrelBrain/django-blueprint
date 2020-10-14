@@ -17,15 +17,15 @@ from sys import path
 # ============================== #
 PROJECT_ROOT = Path(__file__).resolve().parent.parent.parent
 
-APPS_DIR = Path(PROJECT_ROOT).joinpath('apps')
+APPS_DIR = str(PROJECT_ROOT / 'apps')
 
-LOG_DIR = Path(PROJECT_ROOT).joinpath('logs')
+LOG_DIR = str(PROJECT_ROOT / 'logs')
 
-MEDIA_ROOT = Path(PROJECT_ROOT).joinpath('media')
+MEDIA_ROOT = str(PROJECT_ROOT / 'media')
 
-SCRIPTS_DIR = Path(PROJECT_ROOT).joinpath('scripts')
+SCRIPTS_DIR = str(PROJECT_ROOT / 'scripts')
 
-STATIC_ROOT = Path(PROJECT_ROOT).joinpath('assets')
+STATIC_ROOT = str(PROJECT_ROOT / 'assets')
 
 for directory in [APPS_DIR, LOG_DIR, MEDIA_ROOT, SCRIPTS_DIR]:
     if not Path(directory).exists():
@@ -41,7 +41,7 @@ ADMINS = [
 ]
 
 FIXTURE_DIRS = [
-    Path(PROJECT_ROOT).joinpath('fixtures'),
+    str(PROJECT_ROOT / 'fixtures'),
 ]
 
 INSTALLED_APPS = [
@@ -80,7 +80,7 @@ TEMPLATES = [
     {
         'BACKEND': 'django.template.backends.django.DjangoTemplates',
         'DIRS': [
-            Path(PROJECT_ROOT).joinpath('templates'),
+            str(PROJECT_ROOT / 'templates'),
         ],
         'OPTIONS': {
             'loaders': [
@@ -149,7 +149,7 @@ SITE_ID = 100
 STATIC_URL = '/static/'
 
 STATICFILES_DIRS = [
-    Path(PROJECT_ROOT).joinpath('static'),
+    str(PROJECT_ROOT / 'static'),
 ]
 
 STATICFILES_FINDERS = (

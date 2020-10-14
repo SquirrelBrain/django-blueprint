@@ -59,7 +59,7 @@ if __name__ == "__main__":
     RED = '\033[91m'
     RESET = '\033[0m'
 
-    PROJECT_ROOT = Path(__file__).resolve().parent.parent
+    PROJECT_ROOT = Path(__file__).resolve().parent.parent.parent
     SETTINGS_DIR = Path(PROJECT_ROOT).joinpath('{{ project_name }}/settings')
 
     check_file_system(PROJECT_ROOT)

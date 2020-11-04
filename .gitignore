@@ -1,25 +1,19 @@
-# =================================================================== #
-# Files, directories and patterns that Git will intentionally ignore. #
-# Note: Files already tracked by Git are not affected. For complete   #
-# reference, please see:  https://git-scm.com/docs/gitignore          #
-# =================================================================== #
+# Files, directories and patterns that Git will intentionally
+# ignore. NOTE: Files already tracked by Git are not affected.
+# Docs: https://git-scm.com/docs/gitignore
 
-# ============================== #
-#            Database            #
-# ============================== #
+# Database
 *.db
 *.sql
 db.sqlite3
 db.sqlite3-journal
 
-# ============================== #
-#    Distribution / Packaging    #
-# ============================== #
-*.egg
-*.egg-info/
+# Distribution / Packaging
 .eggs/
 .installed.cfg
 .Python
+*.egg
+*.egg-info/
 build/
 develop-eggs/
 dist/
@@ -35,54 +29,36 @@ share/python-wheels/
 var/
 wheels/
 
-# ============================== #
-#        Django Framework        #
-# ============================== #
+# Django Framework
 local_settings.py
 logs/
 media/
 site_media/
 
-# ============================== #
-#         Installer Logs         #
-# ============================== #
-pip-log.txt
+# Installer Logs
 pip-delete-this-directory.txt
+pip-log.txt
 
-# ============================== #
-#           Mac / OS X           #
-# ============================== #
+# Mac / OS X
 .DS_Store
 
-# ============================== #
-#      mkdocs Documentation      #
-# ============================== #
+# mkdocs Documentation
 /site
 
-# ============================== #
-#             pyenv              #
-# ============================== #
+# pyenv
 .python-version
 
-# ============================== #
-#         Python Bytecode        #
-# ============================== #
-*$py.class
-*.pyc
-*.py[cod]
+# Python Bytecode
 __pycache__/
+*.py[cod]
+*.pyc
+*$py.class
 
-# ============================== #
-#      Sphinx Documentation      #
-# ============================== #
-docs/_build/
+# Sphinx Documentation
 doc/_build/
+docs/_build/
 
-# ============================== #
-#    Unit Testing / Coverage     #
-# ============================== #
-*.cover
-*.py,cover
+# Unit Testing / Coverage
 .cache
 .coverage
 .coverage.*
@@ -90,21 +66,19 @@ doc/_build/
 .nox/
 .pytest_cache/
 .tox/
+*.cover
+*.py,cover
 coverage.xml
 htmlcov/
 nosetests.xml
 pytestdebug.log
 
-# ============================== #
-#      Virtual Environments      #
-# ============================== #
+# Virtual Environments
 .env
 .venv
 env/
 venv/
 
-# ============================== #
-#     Visual Studio Code IDE     #
-# ============================== #
+# Visual Studio Code IDE
 .vscode/
 *.code-workspace
